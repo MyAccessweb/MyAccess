@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.wrapper{
+    width: 520px;
+    background: #00376e;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.wrapper h1{
+    font-size: 46px;
+    padding: 0 30px;
+    font-weight: 200;
+    position: relative;
+    top: 17px;
+}
+
+.wrapper h1 span{
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.wrapper label{
+    width: 140px;
+    display: inline-block;
+    font-size: 12px;
+    position: relative;
+    left: 120px;
+    top: 20px;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 40%;
+    height: 20px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    left: 210px;
+}
+
+.input-box .error{
+    display: none;
+}
+
+.wrapper .check{
+    position: relative;
+    left: 95px;
+    bottom: 10px;
+}
+
+.wrapper .btn{
+    position: relative;
+    width: 55px;
+    background: #00376e;
+    color: #fff;
+    border: 1px solid ;
+    border-radius: 3px;
+    left: 360px;
+    bottom: 16px;
+    cursor: pointer;
+}
+
+.wrapper .h{
+    color: #fff;
+    width: 57%;
+    height: 0.5px;
+    margin-bottom: 50px;
+    margin-left: 120px;
+}
+
+.wrapper p{
+    font-size: 12px;
+    position: relative;
+    left: 123px;
+    bottom: 30px;
+}
+
+.wrapper .select{
+    position: relative;
+    left: 214px;
+    bottom: 51px;
+}
+
+.wrapper a{
+    position: relative;
+    color: #fff;
+    font-size: 10.5px;
+    left: 221px;
+    bottom: 51px;
+    text-decoration: none;
+}
+
+.wrapper a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 426px) {
+    html,body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .wrapper h1{
+        left: 30px;
+    }
+
+    .wrapper label{
+        left: 70px;
+    }
+
+    .input-box input{
+        left: 150px;
+    }
+
+    .wrapper .check{
+        left: 80px;
+    }
+
+    .wrapper .btn{
+        left: 255px;
+    }
+
+    .wrapper .h{
+        margin-left: 80px;
+    }
+
+    .wrapper p{
+        left: 70px;
+    }
+
+    .wrapper .select{
+        left: 140px;
+    }
+
+    .wrapper a{
+        left: 140px;
+    }
+}
